@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+ .window{
+            width: 80%;
+            margin: auto;
+            margin-top: 100px;
+            height: 500px;
+            overflow: hidden;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        .reel{
+            width: 500%;
+            height: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+            animation: slider 15s infinite;
+        }
+        .reel div{
+            width: 20%;
+            height: 100%;
+            float: left;
+            position: relative;
+        }
+        .reel div img{
+            height: 100%;
+            width:  100%;
+        }
+        .reel div h1{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%);
+            color: black;
+            margin: auto;
+        }
+        .reel div p{
+            position: absolute;
+            left: 50%;
+            top: 60%;
+            transform: translateX(-50%);
+            color: black;
+            margin: auto;
+        }
+    
+        @keyframes slider {
+            0%{left:   0%;}
+            10%{left:  0%;}
+            20%{left: -100%;}
+            30%{left: -100%;}
+            40%{left: -200%;}
+            50%{left: -200%;}
+            60%{left: -300%;}
+            70%{left: -300%;}
+            80%{left: -400%;}
+            90%{left: -400%;}
+            100%{left: 0%;}
+        }
+          
+    </style>
+    </head>
+    <body>
+        <div class="window">
+            <div class="reel">
+                <div>
+                    <img src="./images2/coast.jpg">
+                    <h1>This is Slide one</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, officia.</p>
+                </div>
+                <div>
+                    <img src="./images2/Images/sunset.jpg">
+                    <h1>This is Slide two</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, officia.</p>
+                </div>
+                <div>
+                    <img src="./images2/Images/boating.jpg">
+                    <h1>This is Slide three</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, officia.</p>
+                </div>
+                <div>
+                    <img src="./images2/Images/lappy.jpg">
+                    <h1>This is Slide four</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, officia.</p>
+                </div>
+                <div>
+                    <img src="./images2/river.jpg">
+                    <h1>This is Slide five</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, officia.</p>
+                </div>
+            </div>
+        </body>
+        </html>
+        
